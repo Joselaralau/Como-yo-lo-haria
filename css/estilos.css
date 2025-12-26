@@ -180,11 +180,11 @@ a {
 	z-index: 1;
 }
 
-/* Texto sobre el banner – SIN caja de fondo (opción D) */
+
 .banner__content {
 	position: absolute;
 	z-index: 2;
-	top: calc(var(--header-height) + 20px);
+	top: calc(var(--header-height) + 40px);
 	left: 50%;
 	transform: translateX(-50%);
 	color: #fff;
