@@ -184,7 +184,7 @@ a {
 .banner__content {
 	position: absolute;
 	z-index: 2;
-	top: calc(50% + 60px);
+	top: calc(50% + 30px);
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: #fff;
@@ -726,7 +726,7 @@ h4 {
 
 @media (min-width: 1600px) {
   .banner__content {
-    top: calc(50% + 40px);
+    top: calc(50% + 20px);
   }
 
   :root {
@@ -736,6 +736,6 @@ h4 {
 
 @media (min-width: 1400px) and (max-height: 900px) {
   .banner__content {
-    top: calc(50% + 40px);
+    top: calc(50% + 35px);
   }
 }
