@@ -737,6 +737,6 @@ h4 {
 
 @media (min-width: 1400px) and (max-height: 900px) {
   .banner__content {
-    top: calc(50% + 35px);
+    top: calc(var(--header-height) + 40px);
   }
 }
