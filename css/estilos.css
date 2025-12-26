@@ -17,6 +17,10 @@
 	margin: 0;
 	padding: 0;
 }
+:root {
+  --header-height: 160px; /* valor base */
+	}
+
 
 html, body {
 	height: 100%;
@@ -148,6 +152,10 @@ a {
 	position: relative;
 	margin-top: 0;
 	overflow: hidden;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	padding-top: var(--header-height);
 }
 
 /* Altura moderna: ~65% de la pantalla */
@@ -155,6 +163,7 @@ a {
 	width: 100%;
 	height: auto;
 	min-height: 100svh; 
+	min-height: calc(100svh - var(--header-height));
 	object-fit: cover;
 }
 
@@ -173,11 +182,11 @@ a {
 
 /* Texto sobre el banner – SIN caja de fondo (opción D) */
 .banner__content {
-	position: absolute;
+	position: relative;
 	z-index: 2;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	top: 0;
+	left: 0;
+	transform: none;
 	color: #fff;
 	text-align: center;
 	padding: 10px 20px;
@@ -633,6 +642,10 @@ h4 {
 }
 
 @media (min-width: 1024px) {
+
+	:root {
+    	--header-height: 140px;
+  	}
 	.container {
 		width: 80%;
 	}
@@ -714,5 +727,9 @@ h4 {
 @media (min-width: 1600px) {
   .banner__content {
     max-width: 680px;
+  }
+
+  :root {
+    --header-height: 180px;
   }
 }
