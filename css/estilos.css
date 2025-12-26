@@ -700,7 +700,7 @@ h4 {
   }
 }
 
-/* Ajustes especiales MacBook / pantallas bajas */
+/* Ajustes especiales pantallas bajas */
 @media (min-height: 700px) and (max-height: 900px) and (min-width: 1200px) {
   .banner__content {
     top: 48%;
@@ -708,5 +708,11 @@ h4 {
 
   .banner__img {
     min-height: 95svh;
+  }
+}
+
+@media (min-width: 1600px) {
+  .banner__content {
+    max-width: 680px;
   }
 }
