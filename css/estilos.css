@@ -23,7 +23,7 @@ html, body {
 }
 
 body {
-	
+	font-family: 'Raleway', sans-serif;
 	background: #F9F9F9;
 	color: #222;
 }
@@ -192,7 +192,7 @@ a {
 }
 
 .banner__content h1 {
-    font-family: 'Staatliches', cursive;
+    font-family: 'Raleway', sans-serif;
     font-size: clamp(2.4rem, 5vw, 4rem);
     letter-spacing: 3px;
     margin-bottom: 10px;
@@ -242,7 +242,7 @@ a {
 .section__titulo,
 .main__title,
 .group__title {
-	font-family: 'Staatliches', cursive;
+	font-family: 'Raleway', sans-serif;
 	text-align: center;
 	color: #9B9990;
 	line-height: 1.2;
@@ -278,15 +278,15 @@ h4 {
 }
 
 .banner__content h1 {
-    font-family: 'Staatliches', cursive;
-    font-size: 4.2rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: clamp(2.4rem, 5vw, 4rem);
     letter-spacing: 3px;
     text-transform: uppercase;
 }
 
 .banner__content p {
     font-family: 'Raleway', sans-serif;
-    font-size: 1.15rem;
+    font-size: clamp(1.05rem, 2vw, 1.6rem);
     line-height: 1.7;
     max-width: 720px;
     margin: 0 auto;
