@@ -18,22 +18,34 @@
 
 
 
-.main-nav a::before {
+.main-nav ul {
+  position: relative;
+}
+
+.main-nav a {
+  position: relative;
+  padding: 10px 18px;
+  transition: color 0.3s ease;
+}
+
+/* Línea animada */
+.main-nav a::after {
   content: "";
   position: absolute;
-  inset: -4px;
-  border: 2px solid #60B325;
-  border-radius: 12px;
-  opacity: 0;
-  transform: scale(0.95);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  left: 50%;
+  bottom: 4px;
+  width: 0;
+  height: 2px;
+  background: #e4ae0b;
+  transition: width 0.4s ease, left 0.4s ease;
 }
 
-.main-nav a:hover::before {
-  opacity: 1;
-  transform: scale(1);
+/* Hover */
+.main-nav a:hover::after,
+.main-nav li.active a::after {
+  width: 100%;
+  left: 0;
 }
-
 
 
 /* Botón hamburguesa (móvil) */
