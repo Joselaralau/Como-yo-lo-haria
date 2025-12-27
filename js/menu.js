@@ -25,17 +25,3 @@ btnMenu.addEventListener("click", () => {
     menu.classList.toggle("mostrar");
 });
 
-
-
-const imgs = document.querySelectorAll('.img-animada');
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
-  });
-});
-
-imgs.forEach(img => observer.observe(img));
-

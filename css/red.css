@@ -86,15 +86,3 @@
 	}
 }
 
-/* Animación base para imágenes */
-.img-animada {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-/* Cuando entra en pantalla */
-.img-animada.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
