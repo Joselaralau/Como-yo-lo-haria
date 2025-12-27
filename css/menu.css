@@ -17,6 +17,25 @@
 }
 
 
+
+.main-nav a::before {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border: 2px solid #e4ae0b;
+  border-radius: 12px;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.main-nav a:hover::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+
 /* Botón hamburguesa (móvil) */
 .icon-th-list {
 	display: block;
