@@ -457,21 +457,21 @@ h4 {
 }
 
 /* Modales base que utilizan corporativos/hospitales/etc. */
-.modal {
-	visibility: hidden;
-	opacity: 0;
+
+.modal{
+  display: none;
 }
 
-.modal:target {
-	visibility: visible;
-	opacity: 1;
-	transition: all 0.4s;
-	position: fixed;
-	inset: 0;
-	background: rgba(0, 0, 0, 0.85);
-	z-index: 2000;
-	padding-top: 40px;
+/* Solo el modal abierto (por :target) se muestra encima */
+.modal:target{
+  display: block;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 2000;
+  padding-top: 40px;
 }
+
 
 .modal h3 {
 	color: #fff;
