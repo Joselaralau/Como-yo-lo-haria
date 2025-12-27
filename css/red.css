@@ -86,3 +86,11 @@
 	}
 }
 
+.galeria img {
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
