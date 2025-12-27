@@ -33,7 +33,7 @@
   content: "";
   position: absolute;
   left: 50%;
-  bottom: 4px;
+  bottom: 2px;
   width: 0;
   height: 2px;
   background: #60B325;
@@ -76,6 +76,21 @@
 	list-style: none;
 	z-index: 3000;
 }
+.menu > li {
+  position: relative;
+}
+
+.menu li ul {
+  position: absolute;
+  top: 100%;       /* Justo debajo del botón */
+  left: 0;
+  margin-top: 4px; /* separación pequeña */
+  z-index: 9999;
+}
+.menu li:hover > ul {
+  display: block;
+}
+
 
 .mostrar {
 	height: 360px; /* ajusta según número de elementos */
