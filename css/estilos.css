@@ -163,7 +163,7 @@ a {
 	width: 100%;
 	height: auto;
 	min-height: 100svh; 
-	min-height: calc(10svh - var(--header-height));
+	min-height: calc(100svh - var(--header-height));
 	object-fit: cover;
 }
 
