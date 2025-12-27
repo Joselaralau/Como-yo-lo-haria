@@ -247,4 +247,17 @@
 	list-style: none;
     }
 
+    .menu li ul {
+    position: relative;      /* ya no flotante */
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .menu li ul li a {
+    padding: 16px 24px;
+    font-size: 18px;
+  }
+
 }
