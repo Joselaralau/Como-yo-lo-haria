@@ -110,6 +110,10 @@ a {
     pointer-events: auto;
 }
 
+.main-header.scrolled {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+}
 
 .logo-container img {
   width: 160px;

@@ -124,6 +124,14 @@
 	<!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167334712-1">
 </script>
+
+
+<script>
+window.addEventListener('scroll', () => {
+  const header = document.querySelector('.main-header');
+  header.classList.toggle('scrolled', window.scrollY > 50);
+});
+</script>
   <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
