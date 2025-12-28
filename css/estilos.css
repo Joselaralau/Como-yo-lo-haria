@@ -150,6 +150,7 @@ a {
 
 .banner {
 	position: relative;
+	min-height: 100svh;
 	margin-top: 0;
 	overflow: hidden;
 	display: flex;
@@ -160,8 +161,10 @@ a {
 
 /* Altura moderna: ~65% de la pantalla */
 .banner__img {
+	position: absolute;
+	inset: 0;
 	width: 100%;
-	height: auto;
+	height: 100%;
 	min-height: 100svh; 
 	min-height: calc(100svh - var(--header-height));
 	object-fit: cover;
@@ -182,16 +185,13 @@ a {
 
 
 .banner__content {
-	position: absolute;
-	z-index: 2;
-	top: calc(var(--header-height) + 20px);
-	left: 50%;
-	transform: translateX(-50%);
+	position: relative;
+  	z-index: 2;
+  	text-align: center;
+  	max-width: 900px;
+  	width: min(90%, 720px);
+  	padding: clamp(20px, 4vw, 60px);
 	color: #fff;
-	text-align: center;
-	padding: 10px 20px;
-	max-width: 900px;
-	width: min(90%, 720px);
 	margin: 0 auto;
 }
 
@@ -579,13 +579,13 @@ h4 {
   	}
 
   .banner__content p {
-    font-size: 1.05rem;      /* antes se ve más grande */
+    font-size: clamp(1rem, 4vw, 1.2rem);
     line-height: 1.6;        /* CLAVE: separa líneas */
     margin-bottom: 14px;     /* espacio entre bloques */
   	}
 
   .banner__content h1 {
-    font-size: 2.2rem;
+    font-size: clamp(1.8rem, 6vw, 2.4rem);
     margin-bottom: 16px;
   	}
 
@@ -682,17 +682,25 @@ h4 {
     	width: 300px; /*tamaño del logo en pc */
   	}
 
-	.logo-container {
- 		margin-left: -90px; /*mover logo a la izquierda en pc */
-	}
+
+	.main-header .container--flex {
+  justify-content: space-between;
+}
+
+.logo-container img {
+  width: clamp(140px, 18vw, 300px);
+}
+
+.main-header__contactInfo {
+  margin: 0;
+  font-size: clamp(.9rem, 1.2vw, 1.1rem);
+}
 
 	.main-header .container--flex {
     	align-items: center;
   	}
 
-	.main-header__contactInfo {
-    	margin-right: -400px; /*mover whatsapp a la derecha en pc */
-  	}
+
 
 	.main-header__contactInfo a {
     	font-size: 1.1rem; 
