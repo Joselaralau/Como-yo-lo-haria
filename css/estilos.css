@@ -103,7 +103,7 @@ a {
     z-index: 9999;
     background: transparent !important;
     padding: 14px 0;
-	pointer-events: none;
+
 }
 
 .main-header * {
@@ -165,7 +165,7 @@ a {
 	
 }
 
-/* Altura moderna: ~65% de la pantalla */
+
 .banner__img {
 	position: absolute;
 	inset: 0;
