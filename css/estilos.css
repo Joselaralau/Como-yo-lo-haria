@@ -96,7 +96,7 @@ a {
 ========================== */
 
 .main-header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -156,6 +156,7 @@ a {
 	display: flex;
   	align-items: center;
   	justify-content: center;
+	padding-top: var(--header-height);
 	
 }
 
@@ -196,6 +197,9 @@ a {
 }
 
 
+.banner_digital .banner__content {
+    margin-top: clamp(40px, 8vh, 120px);
+}
 
 
 /* Animaciones de entrada */
@@ -652,17 +656,12 @@ h4 {
 		width: 80%;
 	}
 
-	.banner__content {
-    	transform: translateY(-10vh);
-  	}
+
 
 	.banner__content p {
 		font-size: 1.9rem;
 	}
-	.banner__digital .banner__content{
-		top: 50%; 
-		transform: translate(-50%, -105%);  /* Ajuste vertical para pantallas grandes */
-	}
+	
 
 	.banner__digital .banner__content p {
 		font-size: 1.3rem;
