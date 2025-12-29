@@ -187,7 +187,7 @@ a {
 
 
 .banner__content {
-	position: relative;
+	position: absolute;
   	z-index: 2;
   	text-align: center;
   	max-width: 900px;
