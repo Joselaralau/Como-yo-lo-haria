@@ -163,6 +163,7 @@
     visibility: visible ;
     justify-content: center;
     gap: 40px;
+    overflow: visible;
   }
 
     /* Ocultar hamburguesa solo aquí */
