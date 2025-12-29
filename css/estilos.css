@@ -166,6 +166,7 @@ a {
     background-repeat: no-repeat;
     background-position: center;
 	box-sizing: border-box;
+	overflow: hidden;
 }
 
 
@@ -199,6 +200,7 @@ a {
   	padding: clamp(20px, 4vw, 60px);
 	padding-top: 180px; 
 	color: #fff;
+	box-sizing: border-box;
 	margin: 0 auto;
 	margin-top: 40px;
 	animation: fadeUp 1.2s ease-out forwards;
