@@ -158,16 +158,13 @@ a {
 .banner {
 	position: relative;
 	min-height: 100vh;
-	margin-top: -300px;
 	display: flex;
   	align-items: center;
   	justify-content: center;
 	padding-top: var(--header-height);
-	z-index: -1000;
-	background-size: contain;
+	background-size: cover;
     background-repeat: no-repeat;
-    background-position: top center;
-    min-height: 120vh; /* IMPORTANTE */
+    background-position: center;
 }
 
 
@@ -200,6 +197,7 @@ a {
 	padding-top: 40px; /* espacio visual extra */
 	color: #fff;
 	margin: 0 auto;
+	margin-top: 40px;
 	animation: fadeUp 1.2s ease-out forwards;
 }
 
@@ -588,7 +586,7 @@ h4 {
   	}
 	
 	.banner__content {
-    	padding-top: 30px;
+    	margin-top: 20px;
   	}
 
 
