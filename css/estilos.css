@@ -311,6 +311,16 @@ h4 {
     max-width: 720px;
     margin: 0 auto;
 }
+.banner-keywords-wrapper {
+  position: relative;
+  z-index: 10; /* SOLO esta parte */
+}
+
+.banner-keywords-wrapper a {
+  position: relative;
+  z-index: 11;
+  pointer-events: auto;
+}
 
 
 
