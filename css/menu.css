@@ -10,14 +10,14 @@
     left: 0;
     width: 100%;
     z-index: 9999;  
-    background: #000;
+    background: transparent;
 }
 /* Ajuste para PC (Línea 115 aprox) */
 @media screen and (min-width: 1024px) {
     .main-nav {
         position: relative;
         top: 0;
-        background: #000;
+        background: transparent;
     }
 }
 

@@ -103,8 +103,8 @@ a {
     left: 0;
     width: 100%;
     height: auto; 
-    z-index: 99999; /* Por encima de todo */
-    background: #000; /* Fondo negro obligatorio */
+    z-index: 99999; 
+    background: transparent; 
     display: block;
 }
 
