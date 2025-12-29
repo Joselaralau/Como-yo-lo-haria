@@ -70,9 +70,6 @@
 
 /* UL principal del menú (estado cerrado en móvil) */
 .menu {
-  position: fixed;        /* 🔑 CLAVE */
-  top: 0;
-  left: 0;
 	width: 100%;
 	padding: 0;
 	margin: 0;
@@ -83,7 +80,6 @@
 	transition: height 0.3s ease;
 	list-style: none;
 	z-index: 3000;
-  padding-top: 90px;
 }
 .menu > li {
   position: relative;
