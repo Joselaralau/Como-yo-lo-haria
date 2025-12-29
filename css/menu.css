@@ -156,7 +156,7 @@
         left: 0;
         width: 100%;
         z-index: 9000;
-        background: #000 !important;
+        background: transparent;
         display: flex;
         justify-content: center;
         text-align: center;
@@ -165,10 +165,10 @@
 
 
     .menu {
-        display: flex !important;
-        height: auto !important;
-        opacity: 1 !important;
-        visibility: visible !important;
+        display: flex ;
+        height: auto ;
+        opacity: 1 ;
+        visibility: visible ;
         justify-content: center;
         gap: 40px;
     }
@@ -176,7 +176,7 @@
     /* Ocultar hamburguesa solo aquí */
     #btnmenu,
     .icon-th-list {
-        display: none !important;
+        display: none ;
     }
     .nav-container {
     justify-content: center;
@@ -190,7 +190,7 @@
     }
 
     .menu__link {
-        color: #fff !important;
+        color: #fff ;
         font-weight: 500;
         font-size: 1.15rem;
         padding: 14px 18px;
