@@ -17,8 +17,6 @@
 	margin: 0;
 	padding: 0;
 }
-
-
 :root {
   --header-height: 120px; 
 	}
@@ -165,7 +163,7 @@ a {
   	align-items: center;
   	justify-content: center;
 	padding-top: var(--header-height);
-	z-index: 1;
+	z-index: -1000;
 	background-size: contain;
     background-repeat: no-repeat;
     background-position: top center;
@@ -188,12 +186,11 @@ a {
 	inset: 0;
 	background: rgba(0,0,0,.5);
 	z-index: 1;
-	pointer-events: none;
 }
 
 
 .banner__content {
-	position: relative;
+	position: absolute;
   	z-index: 2;
   	text-align: center;
   	max-width: 900px;
@@ -311,16 +308,6 @@ h4 {
     line-height: 1.7;
     max-width: 720px;
     margin: 0 auto;
-}
-.banner-keywords-wrapper {
-  position: relative;
-  z-index: 3; 
-}
-
-.banner-keywords-wrapper a {
-  position: relative;
-  z-index: 11;
-  pointer-events: auto;
 }
 
 
@@ -602,13 +589,8 @@ h4 {
     	width: 90%;       
 		transform: none;
   	}
-	
-	.banner {
-		margin-top: 0; /* QUITAMOS el margen negativo en móvil */
-		padding-top: var(--header-height);
-	}
 
-	
+
 
   	.banner__content p {
     	font-size: clamp(1rem, 4vw, 1.2rem);
@@ -636,15 +618,8 @@ h4 {
     	font-size: 2.2rem;
     	margin-bottom: 16px;
   	}
-	
 
-	.main-header {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		z-index: 5000; /* MÁS ALTO QUE EL BANNER */
-	}
+	
 	.main-header__contactInfo {
     	margin-left: auto;        /* sigue a la derecha */
     	margin-top: -50px;        /* SUBE el WhatsApp */
