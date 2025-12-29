@@ -62,19 +62,18 @@
 
 /* UL principal del menú (estado cerrado en móvil) */
 .menu {
-	position: absolute;        /* 🔑 CLAVE */
-	top: 100%;                 
-	left: 0;
+  
 	width: 100%;
+	padding: 0;
+	margin: 0;
 	height: 0;
-	overflow: hidden;
-	background-color:transparent;
+  overflow: hidden;
+	background: transparent;
 	text-align: center;
 	transition: height 0.3s ease;
 	list-style: none;
 	z-index: 3000;
 }
-
 .menu > li {
   position: relative;
 }
