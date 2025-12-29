@@ -161,10 +161,11 @@ a {
 	display: flex;
   	align-items: center;
   	justify-content: center;
-	padding-top: var(--header-height);
+	padding-top: 110px;
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+	box-sizing: border-box;
 }
 
 
@@ -174,6 +175,7 @@ a {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	z-index: 0;
 }
 
 /* Oscurecido general para que el texto se lea mejor */
@@ -729,6 +731,9 @@ h4 {
 	.info {
 		grid-template-columns: repeat(2, 1fr);
 	}
+	.banner {
+    padding-top: 150px; /* header + botón hamburguesa */
+  }	
 }
 
 	
