@@ -5,11 +5,11 @@
 
 /* Contenedor de navegación */
 .main-header {
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 9999;  
+    z-index: 3000;  
     background: transparent;
 }
 /* Ajuste para PC (Línea 115 aprox) */
@@ -160,6 +160,7 @@
         display: flex;
         justify-content: center;
         text-align: center;
+         height: var(--header-height);
     }
 
 
