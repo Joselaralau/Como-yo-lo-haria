@@ -5,8 +5,8 @@
 
 /* Contenedor de navegación */
 .main-nav {
-  position: absolute;
-  top: 65px; 
+  position: relative;
+  top: 0; 
   display: flex;
   justify-content: center;
   width: 100%;
@@ -146,8 +146,8 @@
 @media screen and (min-width: 1024px) {
 
     .main-nav {
-        position: absolute;
-        top: 140px;  
+        position: relative;
+        top: 0;  
         left: 0;
         width: 100%;
         z-index: 9000;

@@ -98,11 +98,11 @@ a {
 ========================== */
 
 .main-header {
-    position: fixed; /* Se mantiene siempre arriba */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
-    height: auto; /* Cambiamos de fixed height a auto para que quepa el menú */
+    height: auto; 
     min-height: var(--header-height);
     z-index: 9999;
     background: #000;
@@ -725,10 +725,11 @@ h4 {
   	}
 }
 
-	@media (max-width: 1023px) {
-		.info {
-			grid-template-columns: repeat(2, 1fr);
-		}
+@media (max-width: 1023px) {
+	.info {
+		grid-template-columns: repeat(2, 1fr);
 	}
+}
+
 	
 	
