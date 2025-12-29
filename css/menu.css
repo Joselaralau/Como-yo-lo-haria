@@ -5,22 +5,21 @@
 
 /* Contenedor de navegación */
 .main-nav {
-  position: relative; /* Cambiado de absolute a relative para que no flote solo */
-  top: 0; 
+  position: relative !important; /* Se ancla al header */
+  top: 0 !important;             /* No se despega */
   display: flex;
   justify-content: center;
   width: 100%;
-  text-align: center;
-  z-index: 9000;
-  background: transparent; /* El fondo ya lo da el header */
+  background: #000 !important;   /* Mismo fondo negro */
+  z-index: 9999;
 }
 
-/* Ajuste para escritorio */
+/* Ajuste para PC (Línea 115 aprox) */
 @media screen and (min-width: 1024px) {
     .main-nav {
-        position: relative;
-        top: 0;
-        margin-top: 10px; /* Ajusta este margen si quieres subir o bajar el texto un poco */
+        position: relative !important;
+        top: 0 !important;
+        background: #000 !important;
     }
 }
 
