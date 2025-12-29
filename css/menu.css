@@ -9,8 +9,16 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 9999; 
+    z-index: 9999;  
     background: transparent;
+}
+/* Ajuste para PC (Línea 115 aprox) */
+@media screen and (min-width: 1024px) {
+    .main-nav {
+        position: relative;
+        top: 0;
+        background: transparent;
+    }
 }
 
 
@@ -66,7 +74,6 @@
 	padding: 0;
 	margin: 0;
 	height: 0;
-  overflow: hidden;
 	background: transparent;
 	text-align: center;
 	transition: height 0.3s ease;
@@ -118,7 +125,7 @@
 .submenu {
 	display: none;
 	background-color: rgba(0, 0, 0, 0.75);
-  backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
 	list-style: none;
 }
 
@@ -143,94 +150,87 @@
 
 @media screen and (min-width: 1024px) {
 
-  .main-nav {
-    position: relative;
-    top: 0;  
-    left: 0;
-    width: 100%;
-    z-index: 3000;
-    background: transparent;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
+    .main-nav {
+        position: relative;
+        top: 0;  
+        left: 0;
+        width: 100%;
+        z-index: 3000;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
 
 
-  .menu {
-    display: flex ;
-    height: auto ;
-    opacity: 1 ;
-    visibility: visible ;
-    justify-content: center;
-    gap: 40px;
-    overflow: visible;
-  }
+
+    .menu {
+        display: flex ;
+        height: auto ;
+        opacity: 1 ;
+        visibility: visible ;
+        justify-content: center;
+        gap: 40px;
+    }
 
     /* Ocultar hamburguesa solo aquí */
-  #btnmenu,
-  .icon-th-list {
-    display: none ;
-  }
-  .nav-container {
+    #btnmenu,
+    .icon-th-list {
+        display: none ;
+    }
+    .nav-container {
     justify-content: center;
-  }
+    }
 
 
-  .menu__item {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+    .menu__item {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
 
-  .menu__link {
-    color: #fff ;
-    font-weight: 500;
-    font-size: 1.15rem;
-    padding: 14px 18px;
-    text-decoration: none;
-  }
+    .menu__link {
+        color: #fff ;
+        font-weight: 500;
+        font-size: 1.15rem;
+        padding: 14px 18px;
+        text-decoration: none;
+    }
 
+    /* ===== SUBMENÚ HOVER DESKTOP ===== */
 
-  .menu,
-.nav,
-.menu-mobile {
-  position: relative;
-  z-index: 6000;
-}
-  /* ===== SUBMENÚ HOVER DESKTOP ===== */
-
-  .has-submenu {
+    .has-submenu {
         position: relative;
-  }
+    }
 
-  .submenu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    min-width: 230px;
-    background: rgba(0, 0, 0, 0.825);
-    display: none;
-    padding: 10px 0;
-    z-index: 9999;        
-  }
+    .submenu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        min-width: 230px;
+        background: rgba(0, 0, 0, 0.825);
+        display: none;
+        padding: 10px 0;
+        z-index: 9999;
+    }
 
-  .submenu li a {
-    padding: 12px 20px;
-    font-size: 0.95rem;
-    display: block;
-  }
+    .submenu li a {
+        padding: 12px 20px;
+        font-size: 0.95rem;
+        display: block;
+    }
 
     /* Mostrar submenú al pasar el mouse */
-  .has-submenu:hover .submenu {
-    display: block;
-  }
-  .menu__link:hover {
+    .has-submenu:hover .submenu {
+        display: block;
+    }
+    .menu__link:hover {
     color: #b46cff; /* usa tu morado */
-  }
+    }
 
-  .submenu li a:hover {
-    background: #b46cff;
-  }
+    .submenu li a:hover {
+        background: #b46cff;
+    }
 
 
 
@@ -241,16 +241,16 @@
   .menu {
     background-color: rgba(0, 0, 0, 0.75);
     backdrop-filter: blur(8px);
-  }
+    }
 
-  .submenu {
-	  display: none;
-	  background-color: rgba(0, 0, 0, 0.75);
+    .submenu {
+	display: none;
+	background-color: rgba(0, 0, 0, 0.75);
     backdrop-filter: blur(8px);
-	  list-style: none;
-  }
+	list-style: none;
+    }
 
-  .menu li ul {
+    .menu li ul {
     position: relative;      /* ya no flotante */
     top: 0;
     left: 0;
