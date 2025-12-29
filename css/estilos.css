@@ -18,14 +18,7 @@
 	padding: 0;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 90px; /* la altura real de tu header */
-    z-index: 1000;
-}
+
 :root {
   --header-height: 120px; 
 	}
