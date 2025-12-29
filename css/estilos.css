@@ -18,7 +18,7 @@
 	padding: 0;
 }
 :root {
-  --header-height: 160px; 
+  --header-height: 120px; 
 	}
 
 
@@ -101,10 +101,18 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 9999;
-    background: transparent !important;
-    padding: 14px 0;
+    height: var(--header-height);
+    z-index: 10000;
 
+    background: rgba(0,0,0,0.85);
+    backdrop-filter: blur(6px);
+
+    display: flex;
+    align-items: center;
+}
+.main-header .container--flex {
+	height: 100%;
+	align-items: center;
 }
 
 .main-header * {
@@ -157,12 +165,11 @@ a {
 .banner {
 	position: relative;
 	min-height: 100svh;
-	margin-top: 0;
 	overflow: hidden;
 	display: flex;
   	align-items: center;
   	justify-content: center;
-	
+	padding-top: var(--header-height);
 	
 }
 
