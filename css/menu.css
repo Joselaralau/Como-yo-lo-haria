@@ -62,18 +62,24 @@
 
 /* UL principal del menú (estado cerrado en móvil) */
 .menu {
-  
-	width: 100%;
-	padding: 0;
-	margin: 0;
-	height: 0;
-  overflow: hidden;
-	background: transparent;
-	text-align: center;
-	transition: height 0.3s ease;
-	list-style: none;
-	z-index: 3000;
+    position: fixed;
+    top: 90px; /* debajo del header */
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 90px);
+    background: rgba(0,0,0,0.95);
+    backdrop-filter: blur(6px);
+
+    transform: translateY(-20px);
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity .3s ease, transform .3s ease;
+    text-align: center;
+    list-style: none;
+    z-index: 9999;
 }
+
 .menu > li {
   position: relative;
 }
@@ -91,8 +97,11 @@
 
 
 .mostrar {
-	height: 360px; /* ajusta según número de elementos */
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
 }
+
 
 .menu__item {
 	position: relative;
