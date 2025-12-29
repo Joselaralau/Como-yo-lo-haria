@@ -62,10 +62,10 @@
 
 /* UL principal del menú (estado cerrado en móvil) */
 .menu {
-  position: absolute;   
-  top: 90px;            
-  left: 0;
-  width: 100%;
+  position: absolute;   /* 🔑 CLAVE */
+    top: 90px;            /* justo debajo del header */
+    left: 0;
+    width: 100%;
 	width: 100%;
 	padding: 0;
 	margin: 0;
