@@ -164,7 +164,10 @@ a {
   	justify-content: center;
 	padding-top: var(--header-height);
 	z-index: -1000;
-	
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    min-height: 120vh; /* IMPORTANTE */
 }
 
 
@@ -664,6 +667,7 @@ h4 {
 
 	.banner {
         margin-top: -350px;
+		min-height: 140vh;
     }
 
 	.banner__content p {
