@@ -106,7 +106,6 @@ a {
     min-height: var(--header-height);
     z-index: 9999;
     background: #000;
-    backdrop-filter: blur(6px);
     display: block;
 }
 
