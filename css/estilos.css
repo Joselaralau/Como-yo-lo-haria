@@ -107,7 +107,8 @@ a {
     background: #000;
     backdrop-filter: blur(6px);
     display: block;
-
+	transform: translateZ(0); /* CLAVE */
+    will-change: transform;
 }
 
 .main-header * {
@@ -200,6 +201,7 @@ a {
   	padding: clamp(20px, 4vw, 60px);
 	color: #fff;
 	margin: 0 auto;
+	animation: fadeUp 1.2s ease-out forwards;
 }
 
 
@@ -208,10 +210,7 @@ a {
 }
 
 
-/* Animaciones de entrada */
-.banner__content > * {
-    animation: fadeUp 1.2s ease-out forwards;
-}
+
 
 .banner__content h1 {
     font-family: Arial, Helvetica, sans-serif;
