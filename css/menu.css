@@ -70,7 +70,7 @@
 
 /* UL principal del menú (estado cerrado en móvil) */
 .menu {
-  position: fixed;        /* 🔑 CLAVE */
+  position: fixed;        
   top: 0;
   left: 0;
 	width: 100%;
@@ -78,7 +78,8 @@
 	margin: 0;
 	height: 0;
   overflow: hidden;
-	background: transparent;
+	background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(10px);
 	text-align: center;
 	transition: height 0.3s ease;
 	list-style: none;
