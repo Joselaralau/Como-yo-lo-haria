@@ -98,17 +98,16 @@ a {
 ========================== */
 
 .main-header {
-    position: fixed;
+    position: fixed; /* Se mantiene siempre arriba */
     top: 0;
     left: 0;
     width: 100%;
-	height: var(--header-height);
+    height: auto; /* Cambiamos de fixed height a auto para que quepa el menú */
+    min-height: var(--header-height);
     z-index: 9999;
     background: #000;
     backdrop-filter: blur(6px);
     display: block;
-	transform: translateZ(0); /* CLAVE */
-    will-change: transform;
 }
 
 .main-header * {
@@ -160,12 +159,12 @@ a {
 
 .banner {
 	position: relative;
-	min-height: calc(100vh - var(--header-height));
+	min-height: 100vh;
 	margin-top: 0;
 	display: flex;
   	align-items: center;
   	justify-content: center;
-	
+	padding-top: var(--header-height);
 	
 }
 
@@ -732,10 +731,5 @@ h4 {
 			grid-template-columns: repeat(2, 1fr);
 		}
 	}
-	@media (max-width: 600px) {
-		.info {
-		grid-template-columns: 1fr;
-		}
-	}
-
+	
 	
