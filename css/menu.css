@@ -190,6 +190,13 @@
     text-decoration: none;
   }
 
+
+  .menu,
+.nav,
+.menu-mobile {
+  position: relative;
+  z-index: 6000;
+}
   /* ===== SUBMENÚ HOVER DESKTOP ===== */
 
   .has-submenu {

@@ -602,6 +602,11 @@ h4 {
     	width: 90%;       
 		transform: none;
   	}
+	
+	.banner {
+		margin-top: 0; /* QUITAMOS el margen negativo en móvil */
+		padding-top: var(--header-height);
+	}
 
 	
 
@@ -631,8 +636,15 @@ h4 {
     	font-size: 2.2rem;
     	margin-bottom: 16px;
   	}
-
 	
+
+	.main-header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 5000; /* MÁS ALTO QUE EL BANNER */
+	}
 	.main-header__contactInfo {
     	margin-left: auto;        /* sigue a la derecha */
     	margin-top: -50px;        /* SUBE el WhatsApp */
