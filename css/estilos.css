@@ -98,13 +98,13 @@ a {
 ========================== */
 
 .main-header {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
     height: auto; 
-    z-index: 99999; 
-    background: transparent; 
+    z-index: 3000; 
+    background: transparent;
     display: block;
 }
 
@@ -158,11 +158,12 @@ a {
 .banner {
 	position: relative;
 	min-height: 100vh;
-	margin-top: 0;
+	margin-top: -300px;
 	display: flex;
   	align-items: center;
   	justify-content: center;
 	padding-top: var(--header-height);
+	z-index: -1000;
 	
 }
 
@@ -180,11 +181,7 @@ a {
 	content: '';
 	position: absolute;
 	inset: 0;
-	background: linear-gradient(
-		to bottom,
-		rgba(0, 0, 0, 0.45),
-		rgba(0, 0, 0, 0.65)
-	);
+	background: rgba(0,0,0,.5);
 	z-index: 1;
 }
 
@@ -665,7 +662,9 @@ h4 {
 		width: 80%;
 	}
 
-
+	.banner {
+        margin-top: -350px;
+    }
 
 	.banner__content p {
 		font-size: 1.9rem;
@@ -690,7 +689,6 @@ h4 {
   	}
 
 	
-
 	.logo-container img {
     	width: 300px; /*tamaño del logo en pc */
   	}
