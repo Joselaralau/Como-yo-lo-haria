@@ -70,6 +70,9 @@
 
 /* UL principal del menú (estado cerrado en móvil) */
 .menu {
+  position: fixed;        /* 🔑 CLAVE */
+  top: 0;
+  left: 0;
 	width: 100%;
 	padding: 0;
 	margin: 0;
@@ -80,6 +83,7 @@
 	transition: height 0.3s ease;
 	list-style: none;
 	z-index: 3000;
+  padding-top: 90px;
 }
 .menu > li {
   position: relative;
@@ -98,7 +102,7 @@
 
 
 .mostrar {
-	height: 360px; /* ajusta según número de elementos */
+	height: 100vh;; /* ajusta según número de elementos */
 }
 
 .menu__item {
@@ -126,7 +130,7 @@
 .submenu {
 	display: none;
 	background-color: rgba(0, 0, 0, 0.75);
-    backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
 	list-style: none;
 }
 
@@ -204,34 +208,34 @@
         position: relative;
     }
 
-    .submenu {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        min-width: 230px;
-        background: rgba(0, 0, 0, 0.825);
-        display: none;
-        padding: 10px 0;
-        z-index: 9999;
-    }
+  .submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 230px;
+    background: rgba(0, 0, 0, 0.825);
+    display: none;
+    padding: 10px 0;
+    z-index: 9999;        
+  }
 
-    .submenu li a {
-        padding: 12px 20px;
-        font-size: 0.95rem;
-        display: block;
-    }
+  .submenu li a {
+    padding: 12px 20px;
+    font-size: 0.95rem;
+    display: block;
+  }
 
     /* Mostrar submenú al pasar el mouse */
-    .has-submenu:hover .submenu {
-        display: block;
-    }
-    .menu__link:hover {
+  .has-submenu:hover .submenu {
+    display: block;
+  }
+  .menu__link:hover {
     color: #b46cff; /* usa tu morado */
-    }
+  }
 
-    .submenu li a:hover {
-        background: #b46cff;
-    }
+  .submenu li a:hover {
+    background: #b46cff;
+  }
 
 
 
@@ -242,16 +246,16 @@
   .menu {
     background-color: rgba(0, 0, 0, 0.75);
     backdrop-filter: blur(8px);
-    }
+  }
 
-    .submenu {
-	display: none;
-	background-color: rgba(0, 0, 0, 0.75);
+  .submenu {
+	  display: none;
+	  background-color: rgba(0, 0, 0, 0.75);
     backdrop-filter: blur(8px);
-	list-style: none;
-    }
+	  list-style: none;
+  }
 
-    .menu li ul {
+  .menu li ul {
     position: relative;      /* ya no flotante */
     top: 0;
     left: 0;
