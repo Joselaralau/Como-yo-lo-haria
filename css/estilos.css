@@ -598,7 +598,7 @@ h4 {
     top: 0;
     left: 0;
     width: 100%;
-    height: var(--header-height); /* 🔑 CLAVE */
+    height: var(--header-height); 
     z-index: 3000;
     background: transparent;
 	}
