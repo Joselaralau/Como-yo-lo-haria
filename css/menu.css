@@ -4,16 +4,26 @@
 ========================== */
 
 /* Contenedor de navegación */
+/* Reemplaza las primeras líneas de menu.css con esto */
 .main-nav {
-  position: relative;
-  top: 0; 
+  position: relative; /* Cambiado de absolute a relative */
+  top: 0;             /* Cambiado de 65px a 0 */
   display: flex;
   justify-content: center;
   width: 100%;
   text-align: center;
   left: 0;
   z-index: 9000;
-  background: #000;
+  background: #000;   /* Fondo negro sólido */
+}
+
+/* Busca la línea 115 (el @media) y asegúrate que esté así */
+@media screen and (min-width: 1024px) {
+    .main-nav {
+        position: relative; /* Cambiado de absolute a relative */
+        top: 0;             /* Cambiado de 140px a 0 */
+        background: #000 !important;
+    }
 }
 
 

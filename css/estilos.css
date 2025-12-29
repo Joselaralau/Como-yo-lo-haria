@@ -98,12 +98,11 @@ a {
 ========================== */
 
 .main-header {
-    position: fixed; 
+    position: fixed; /* Mantiene TODO pegado arriba */
     top: 0;
     left: 0;
     width: 100%;
-    height: auto; 
-    min-height: var(--header-height);
+    height: auto;    /* Permite que el menú quepa adentro */
     z-index: 9999;
     background: #000;
     display: block;
