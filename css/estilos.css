@@ -184,7 +184,7 @@ a {
 .banner__content {
 	position: absolute;
 	z-index: 2;
-	top: calc(var(50% + 60px));
+	top: calc(var(--header-height) + 60px);
 	left: 50%;
 	transform: translateX(-50%);
 	color: #fff;
@@ -645,7 +645,7 @@ h4 {
 @media (min-width: 1024px) {
 
 	:root {
-    	--header-height: 140px;
+    	--header-height: 190px;
   	}
 	.container {
 		width: 80%;
