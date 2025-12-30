@@ -576,7 +576,7 @@ h4 {
 @media (max-width: 480px) {
 
   .banner__content {
-    padding-top: 5px;  
+    top: calc(var(--header-height) + 20px);
   }
 
 }
