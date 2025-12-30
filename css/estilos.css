@@ -574,9 +574,8 @@ h4 {
 
 /* ===== Ajuste SOLO para teléfono ===== */
 @media (max-width: 480px) {
-
-  .banner__content {
-    top: calc(var(--header-height) + 10px);
+	.banner .banner__content {
+    top: calc(var(--header-height) + 10px) !important;
   }
 
 }
