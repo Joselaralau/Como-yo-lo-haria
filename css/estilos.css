@@ -184,7 +184,7 @@ a {
 .banner__content {
 	position: absolute;
 	z-index: 2;
-	top: calc(var(--header-height) + 60px);
+	top: calc(var(--header-height) + 60px); /*espacio entre texto y menu */
 	left: 50%;
 	transform: translateX(-50%);
 	color: #fff;
