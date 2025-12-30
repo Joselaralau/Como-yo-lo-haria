@@ -95,17 +95,6 @@ a {
    4. HEADER
 ========================== */
 
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 90px; /* AJUSTA si tu header es más alto */
-  z-index: 1000;
-}
-
-
-
 .main-header {
     position: absolute;
     top: 0;
@@ -161,7 +150,6 @@ header {
 
 .banner {
 	position: relative;
-	padding-top: 90px;
 	margin-top: 0;
 	overflow: hidden;
 	display: flex;
@@ -659,10 +647,6 @@ h4 {
 	:root {
     	--header-height: 140px;
   	}
-
-	.banner {
-    padding-top: 110px;
-  }
 	.container {
 		width: 80%;
 	}
