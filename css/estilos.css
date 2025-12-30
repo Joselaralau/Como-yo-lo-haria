@@ -574,9 +574,7 @@ h4 {
 
 /* ===== Ajuste SOLO para teléfono ===== */
 @media (max-width: 480px) {
-	.banner .banner__content {
-    top: calc(var(--header-height) + 10px) !important;
-  }
+	
 
 }
 
@@ -586,7 +584,11 @@ h4 {
 	.banner__content {
     	width: 90%;              /* más aire lateral */
 		
+		
   	}
+	.banner .banner__content {
+    top: calc(var(--header-height) + 10px) 
+  }
 
   .banner__content p {
     font-size: 1.05rem;      /* antes se ve más grande */
