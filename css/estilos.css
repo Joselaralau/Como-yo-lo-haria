@@ -576,7 +576,7 @@ h4 {
 	
 	.banner__content {
     	width: 90%;              /* más aire lateral */
-		padding-top: 90px;
+		padding-top: 10px;
   	}
 
   .banner__content p {
