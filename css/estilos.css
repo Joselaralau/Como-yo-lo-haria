@@ -184,7 +184,7 @@ a {
 .banner__content {
 	position: absolute;
 	z-index: 2;
-	top: calc(var(50% + 600px));
+	top: calc(var(50% + 6000000px));
 	left: 50%;
 	transform: translateX(-50%);
 	color: #fff;
