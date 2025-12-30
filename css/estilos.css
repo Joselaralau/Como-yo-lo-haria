@@ -572,11 +572,21 @@ h4 {
    11. RESPONSIVE GLOBAL
 ========================== */
 
+/* ===== Ajuste SOLO para teléfono ===== */
+@media (max-width: 480px) {
+
+  .banner__content {
+    padding-top: 90px;  
+  }
+
+}
+
+
 @media (max-width: 768px) {
 	
 	.banner__content {
     	width: 90%;              /* más aire lateral */
-		padding-top: 10px;
+		padding-top: 90px;
   	}
 
   .banner__content p {
