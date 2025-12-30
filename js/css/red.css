@@ -1,0 +1,97 @@
+.fullscreen-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -2000;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.cifra_hos img {
+	width: 20%;
+}
+
+.dato__duro {
+	text-align: center;
+	font-size: 1.6em;
+	color: #E70808;
+}
+
+
+.dato__ {
+	text-align: center;
+	font-size: 1.6em;
+	color: #000;
+}
+
+.fullscreen-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.main__txt span {
+	color: #000;
+}
+
+.main__txt img {
+	display: inline-block;
+	width: 2%;
+}
+
+/* ==========================
+   RED – CORPORATIVOS / HOSPITALES / CENTROS / RESIDENCIALES
+========================== */
+
+/* Ajustes de galería y modales ya están globales en estilos.css,
+   aquí solo lo que cambie para esa red. */
+
+.cifra_hos img {
+	width: 20%;
+	max-width: 180px;
+	margin: 0 auto 10px;
+}
+
+.dato__duro {
+	text-align: center;
+	font-size: 1.3em;
+	color: #E70808;
+}
+
+.dato__ {
+	text-align: center;
+	font-size: 1.3em;
+	color: #000;
+}
+
+/* Puedes agregar variaciones por página usando una clase en el body o en la sección */
+
+/* Ejemplo si en hospitales.html agregas class="page-hospitales" en el body o en la sección main */
+.page-hospitales .banner__content p {
+	/* estilos exclusivos de hospitales */
+}
+
+/* Responsive extra */
+@media (max-width: 768px) {
+	.cifra_hos img {
+		width: 35%;
+	}
+}
+
+.galeria img {
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+

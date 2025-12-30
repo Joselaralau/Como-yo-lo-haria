@@ -1,0 +1,22 @@
+/* ==========================
+   DIGITAL SIGNAGE – ESPECÍFICO
+========================== */
+
+/* Si el banner de digital requiere ajustes particulares */
+.banner--digital .banner__img {
+	/* ejemplo si usas una clase especial en esa sección */
+}
+
+/* Tarjetas de productos/servicios digitales ya usan .info__columna global;
+   aquí pon solo cosas que sean exclusivas de digital */
+
+.digital-wrapper .info__columna {
+	/* ejemplo: */
+	background: #111;
+}
+
+/* Responsive extra para digital, si lo necesitas */
+@media (max-width: 768px) {
+	/* ajustes finos para esa página */
+}
+

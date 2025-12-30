@@ -1,0 +1,63 @@
+/* ==========================
+   CONTACTO – ESPECÍFICO
+========================== */
+
+.contact {
+	padding: 40px 0 60px;
+}
+
+.contact-information {
+	margin-bottom: 30px;
+}
+
+.contact-information .column_title {
+	font-size: 1.4em;
+	margin-bottom: 10px;
+}
+
+.column__txt2,
+.column__txt3 {
+	margin: 5px 0;
+}
+
+.formulario {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.formulario__label {
+	font-weight: 600;
+	font-size: 0.95em;
+}
+
+.formulario__input-txt,
+.formulario__textarea {
+	width: 100%;
+	padding: 8px 10px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	font-size: 0.95em;
+}
+
+.formulario__textarea {
+	min-height: 140px;
+	resize: vertical;
+}
+
+.formulario__btn {
+	margin-top: 10px;
+	background: #7725b3;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 3px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background 0.3s ease;
+}
+
+.formulario__btn:hover {
+	background: #060E4D;
+}
+
