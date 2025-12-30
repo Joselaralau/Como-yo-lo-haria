@@ -184,7 +184,7 @@ a {
 .banner__content {
 	position: absolute;
 	z-index: 2;
-	top: calc(var(50% + 60px));
+	top: calc(var(50% + 600px));
 	left: 50%;
 	transform: translateX(-50%);
 	color: #fff;
@@ -717,7 +717,7 @@ h4 {
 
 @media (max-width: 1280px) {
   .banner__content {
-    top: calc(50% + 1000px);
+    top: calc(50% + 90px);
   }
 }
 
