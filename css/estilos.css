@@ -581,16 +581,23 @@ h4 {
 
 }
 /* ===== SOLO pantallas con poca altura ===== */
+/* ===== Pantallas con poca altura: imagen completa SIN barra negra ===== */
 @media (max-height: 800px) {
+
+  .banner {
+    background-image: url("../fotos/DSC_2506.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 80px;
+  }
 
   .banner__img {
     object-fit: contain;
-  }
-
-  .banner {
-    padding-bottom: 80px; /* espacio para el texto */
+    background: transparent;
   }
 }
+
 
 
 
