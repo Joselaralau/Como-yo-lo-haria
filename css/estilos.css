@@ -585,7 +585,6 @@ h4 {
 
   .banner__img {
     object-fit: contain;
-    background: transparent; /* relleno elegante */
   }
 
   .banner {
