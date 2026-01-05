@@ -65,7 +65,7 @@
 /* ===== Pantallas con poca altura: imagen completa SIN barra negra ===== */
 @media (max-height: 800px) {
 
-  .banner {
+ .contacto .banner {
     background-image: url("../fotos/DSC_2506.jpg");
     background-size: cover;
     background-position: center;
@@ -73,7 +73,7 @@
     padding-bottom: 80px;
   }
 
-  .banner__img {
+  .contacto .banner__img {
     object-fit: contain;
     background: transparent;
   }
