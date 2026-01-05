@@ -593,6 +593,21 @@ h4 {
     top: calc(var(--header-height) + 10px) 
   }
 
+
+  /* ===== SOLO pantallas con poca altura ===== */
+@media (max-height: 800px) {
+
+  .banner__img {
+    object-fit: contain;
+    background: #000; /* relleno elegante */
+  }
+
+  .banner {
+    padding-bottom: 80px; /* espacio para el texto */
+  }
+}
+
+
   .banner__content p {
     font-size: 1.05rem;      /* antes se ve más grande */
     line-height: 1.6;        /* CLAVE: separa líneas */
