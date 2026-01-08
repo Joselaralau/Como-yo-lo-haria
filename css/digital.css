@@ -39,3 +39,20 @@
 		padding: 0.75rem;
 	}
 }
+
+
+@media (max-height: 480px) {
+
+ .digital .banner {
+    background-image: url("../fotos/DSC_2506.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 80px;
+  }
+
+  .digital .banner__img {
+    object-fit: contain;
+    background: transparent;
+  }
+}
