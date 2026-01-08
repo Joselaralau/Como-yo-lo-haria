@@ -84,14 +84,11 @@
   position: absolute;
   top: 100%;       /* Justo debajo del botón */
   left: 0;
-  margin-top: 4px; /* separación pequeña */
+  margin-top: 0; /* separación pequeña */
   z-index: 9999;
 }
 .menu li:hover > ul {
   display: block;
-}
-.has-submenu {
-  padding-bottom: 10px;
 }
 
 
