@@ -397,7 +397,7 @@ h4 {
   aspect-ratio: 16 / 9;
   object-fit: contain;
   object-position: center;
-  background-color: #111;
+  background-color: transparent;
   padding: 8px; /* opcional si quieres aire */
 }
 
