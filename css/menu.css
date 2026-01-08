@@ -84,7 +84,7 @@
   position: absolute;
   top: 100%;       /* Justo debajo del botón */
   left: 0;
-  margin-top: 4px; /* separación pequeña */
+  margin-top: 0;
   z-index: 9999;
 }
 .menu li:hover > ul {
