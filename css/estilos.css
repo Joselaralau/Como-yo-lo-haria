@@ -395,9 +395,12 @@ h4 {
 .info__img {
   width: 100%;
   aspect-ratio: 16 / 9;
-  object-fit: cover;
-  border-radius: 12px;
+  object-fit: contain;
+  object-position: center;
+  background-color: #111;
+  padding: 8px; /* opcional si quieres aire */
 }
+
 .info__columna h2 {
   margin-top: 12px;
   font-size: 0.95rem;
