@@ -33,7 +33,7 @@ body {
 }
 
 /* Imágenes y videos responsivos */
-img, video {
+img {
 	display: block;
 	width: 100%;
 	max-width: 100%;
