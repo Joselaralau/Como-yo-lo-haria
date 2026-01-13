@@ -150,8 +150,9 @@ a {
 .banner {
   position: relative;
   min-height: 100svh;
-  overflow: hidden;
+  padding-bottom: 60px; /* espacio para texto largo */
 }
+
 
 .banner video.video {
   position: absolute;
@@ -166,13 +167,12 @@ a {
 /* ==========================
    AJUSTE TEXTO BANNER DIGITAL
 ========================== */
-
 .digital .banner__content {
-  top: 50%;
-  transform: translate(-50%, -50%);
-  max-height: calc(100svh - var(--header-height) - 40px);
-  overflow: visible;
+  position: relative;
+  margin-top: calc(var(--header-height) + 80px);
+  padding-bottom: 40px;
 }
+
 .digital .banner__content p {
   margin-top: 15px;
 }
