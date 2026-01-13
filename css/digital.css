@@ -57,3 +57,80 @@
   }
 }
 
+/* ==========================
+   DIGITAL SIGNAGE – FIX BANNER
+========================== */
+
+/* 1️⃣ Banner: permitir crecer por texto */
+.digital .banner {
+  min-height: 100svh;
+  padding-top: calc(var(--header-height) + 80px);
+  padding-bottom: 100px;
+  overflow: visible; /* CLAVE: evita recortes */
+}
+
+/* 2️⃣ Video como fondo real */
+.digital .banner video.video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* 3️⃣ Overlay (se mantiene oscuro) */
+.digital .banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.45),
+    rgba(0,0,0,0.65)
+  );
+  z-index: 1;
+}
+
+/* 4️⃣ CONTENIDO: anular TODO lo que venga de estilos.css */
+.digital .banner__content {
+  position: relative !important; /* rompe el absolute global */
+  top: auto !important;
+  left: auto !important;
+  transform: none !important;
+
+  margin: 0 auto;
+  max-width: 900px;
+  width: 90%;
+  text-align: center;
+  z-index: 2;
+}
+
+/* 5️⃣ Texto más legible */
+.digital .banner__content p {
+  line-height: 1.7;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+/* Laptop baja */
+@media (max-height: 750px) {
+  .digital .banner {
+    padding-top: calc(var(--header-height) + 50px);
+    padding-bottom: 80px;
+  }
+}
+
+/* Móvil */
+@media (max-width: 768px) {
+  .digital .banner {
+    padding-top: calc(var(--header-height) + 30px);
+    padding-bottom: 80px;
+  }
+
+  .digital .banner__content {
+    width: 92%;
+  }
+}
