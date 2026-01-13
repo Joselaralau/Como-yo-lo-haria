@@ -57,3 +57,22 @@
   }
 }
 
+/* ==========================
+   VIDEO BANNER – DIGITAL
+========================== */
+
+.banner .video {
+  width: 70%;           /* tamaño del video */
+  max-width: 900px;     /* límite en pantallas grandes */
+  height: auto;
+  object-fit: contain;  /* NO se recorta */
+  margin: 0 auto;
+}
+
+/* Ajuste móvil */
+@media (max-width: 768px) {
+  .banner .video {
+    width: 90%;
+    max-width: 100%;
+  }
+}
