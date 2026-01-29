@@ -1,26 +1,7 @@
-/* ==========================
-   DIGITAL SIGNAGE – ESPECÍFICO
-========================== */
 
-/* Si el banner de digital requiere ajustes particulares */
-.banner--digital .banner__img {
-	/* ejemplo si usas una clase especial en esa sección */
-}
 
-/* Tarjetas de productos/servicios digitales ya usan .info__columna global;
-   aquí pon solo cosas que sean exclusivas de digital */
+/* Digital Singnage*/
 
-.digital-wrapper .info__columna {
-	/* ejemplo: */
-	background: #111;
-}
-
-/* Responsive extra para digital, si lo necesitas */
-@media (max-width: 768px) {
-	/* ajustes finos para esa página */
-}
-
-/* Optimización: eliminar reglas vacías y consolidar estilos */
 
 .banner--digital .banner__img {
 	width: 100%;
@@ -57,11 +38,9 @@
   }
 }
 
-/* ==========================
-   DIGITAL SIGNAGE – FIX BANNER
-========================== */
 
-/* 1️⃣ Banner: permitir crecer por texto */
+
+
 .digital .banner {
   min-height: 100svh;
   padding-top: calc(var(--header-height) + 80px);
@@ -69,7 +48,7 @@
   overflow: visible; /* CLAVE: evita recortes */
 }
 
-/* 2️⃣ Video como fondo real */
+
 .digital .banner video.video {
   position: absolute;
   inset: 0;
@@ -79,7 +58,7 @@
   z-index: 0;
 }
 
-/* 3️⃣ Overlay (se mantiene oscuro) */
+
 .digital .banner::before {
   content: "";
   position: absolute;
@@ -92,9 +71,9 @@
   z-index: 1;
 }
 
-/* 4️⃣ CONTENIDO: anular TODO lo que venga de estilos.css */
+
 .digital .banner__content {
-  position: relative !important; /* rompe el absolute global */
+  position: relative !important; 
   top: auto !important;
   left: auto !important;
   transform: none !important;
@@ -106,16 +85,14 @@
   z-index: 2;
 }
 
-/* 5️⃣ Texto más legible */
+
 .digital .banner__content p {
   line-height: 1.7;
 }
 
-/* ==========================
-   RESPONSIVE
-========================== */
 
-/* Laptop baja */
+
+
 @media (max-height: 750px) {
   .digital .banner {
     padding-top: calc(var(--header-height) + 50px);
@@ -123,7 +100,6 @@
   }
 }
 
-/* Móvil */
 @media (max-width: 768px) {
   .digital .banner {
     padding-top: calc(var(--header-height) + 30px);
