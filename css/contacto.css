@@ -61,7 +61,7 @@
 	background: #060E4D;
 }
 
-/* ===== pantallas con poca altura ===== */
+
 @media (max-height: 800px) {
 
  .contacto .banner {
@@ -92,7 +92,7 @@
   gap: 20px;
 }
 
-/* for all social containers*/
+/* contenedor de tarjetas*/
 .socialContainer {
   width: 52px;
   height: 52px;
