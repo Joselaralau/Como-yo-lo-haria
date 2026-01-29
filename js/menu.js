@@ -22,7 +22,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
-btnMenu.addEventListener("click", () => {
-    menu.classList.toggle("mostrar");
-});
+
 
