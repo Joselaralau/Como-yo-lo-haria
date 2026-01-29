@@ -1,9 +1,7 @@
 
-/* ==========================
-   MENÚ PRINCIPAL VÉRTICE
-========================== */
+/* Menu */
 
-/* Contenedor de navegación */
+/* Contenedor de navegacion */
 .main-nav {
   position: absolute;
   top: 65px; 
@@ -28,7 +26,7 @@
   transition: color 0.3s ease;
 }
 
-/* Línea animada */
+/* Linea animada */
 .main-nav a::after {
   content: "";
   position: absolute;
@@ -40,7 +38,7 @@
   transition: width 0.4s ease, left 0.4s ease;
 }
 
-/* Hover */
+
 .main-nav a:hover::after,
 .main-nav li.active a::after {
   width: 100%;
@@ -48,7 +46,7 @@
 }
 
 
-/* Botón hamburguesa (móvil) */
+/* Boton hamburguesa para telefono */
 .icon-th-list {
 	display: block;
 	color: #fff;
@@ -63,7 +61,7 @@
 	margin-left: 10px;
 }
 
-/* UL principal del menú (estado cerrado en móvil) */
+/* Ul principal del menu (estado cerrado en telefono) */
 .menu {
 	width: 100%;
 	padding: 0;
@@ -82,9 +80,9 @@
 
 .menu li ul {
   position: absolute;
-  top: 100%;       /* Justo debajo del botón */
+  top: 100%;       
   left: 0;
-  margin-top: 0; /* separación pequeña */
+  margin-top: 0; 
   z-index: 9999;
 }
 .menu li:hover > ul {
@@ -93,7 +91,7 @@
 
 
 .mostrar {
-	height: 360px; /* ajusta según número de elementos */
+	height: 360px; 
 }
 
 .menu__item {
@@ -116,7 +114,7 @@
 	background: #7725b3;
 }
 
-/* ===== SUBMENÚ (MÓVIL) ===== */
+/* Submenu para telefono */
 
 .submenu {
 	display: none;
@@ -140,9 +138,7 @@
 	background: #7725b3;
 }
 
-/* ==========================
-   VERSIÓN ESCRITORIO
-========================== */
+
 
 @media screen and (min-width: 1024px) {
 
@@ -194,7 +190,6 @@
         text-decoration: none;
     }
 
-    /* ===== SUBMENÚ HOVER DESKTOP ===== */
 
     .has-submenu {
         position: relative;
@@ -217,12 +212,12 @@
         display: block;
     }
 
-    /* Mostrar submenú al pasar el mouse */
+    /* Mostrar submenu al pasar el mouse */
     .has-submenu:hover .submenu {
         display: block;
     }
     .menu__link:hover {
-    color: #b46cff; /* usa tu morado */
+    color: #b46cff; 
     }
 
     .submenu li a:hover {
@@ -233,7 +228,7 @@
 
 }
 
-@media (max-width: 1023px) { /*telefonos y tablets*/
+@media (max-width: 1023px) { 
 
   .menu {
     background-color: rgba(0, 0, 0, 0.75);
@@ -248,7 +243,7 @@
     }
 
     .menu li ul {
-    position: relative;      /* ya no flotante */
+    position: relative;      
     top: 0;
     left: 0;
     width: 100%;
