@@ -1,20 +1,7 @@
-/* ==========================
-   INDEX – ESTILOS ESPECÍFICOS
-========================== */
+/* Index */
 
-/* Banner principal (si quieres algo distinto al resto) */
-/* Puedes sobrescribir aquí si index necesita un ajuste especial */
-/*
-.banner__img {
-}
-*/
 
-/* Sección “llama” de textos */
-.llama {
-	/* si quieres algo especial para index, ponlo aquí */
-}
-
-/* Galería de CLIENTES (si solo existe en index) */
+/* Galería de CLIENTES  */
 .img-gallery {
 	width: 80%;
 	margin: 40px auto 60px;
@@ -34,7 +21,7 @@
 	transform: scale(1.05);
 }
 
-/* Full image */
+
 .ful-img {
 	width: 100%;
 	height: 100vh;
@@ -67,7 +54,7 @@
   margin: 80px 0 60px;
 }
 
-/* La línea */
+
 .titulo-linea::before {
   content: "";
   position: absolute;
@@ -79,7 +66,7 @@
   opacity: 0.2;
 }
 
-/* El cuadro del texto */
+
 .titulo-linea span {
   position: relative;
   background: #f5f5f5;
@@ -93,18 +80,14 @@
 /*Clienets para celulares*/
 @media screen and (max-width: 600px) {
     .img-gallery {
-        /* Aseguramos que sea una grilla */
         display: grid;
-        /* Forzamos 3 columnas de igual ancho */
         grid-template-columns: repeat(3, 1fr);
-        /* Reducimos la separación en móvil */
         gap: 8px;
     }
 
     .img-gallery img {
         width: 100%;
         height: auto;
-        /* Asegura que la imagen se ajuste a las dimensiones */
         object-fit: cover;
     }
 
