@@ -12,7 +12,7 @@
 
 .img-gallery img {
 	width: 100%;
-	cursor: pointer;
+	cursor: default;
 	transition: transform 0.3s ease;
 	object-fit: contain;
 }
