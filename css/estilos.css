@@ -474,11 +474,12 @@ h4 {
 
 .imagen {
 	width: 100%;
-	height: 70%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 10px;
+  	flex: 1; 
+ 	 display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	gap: 15px;
+  	min-height: 0; 
 }
 
 .imagen a {
@@ -488,12 +489,12 @@ h4 {
 }
 
 .imagen img {
-	max-width: 560px;
-	width: 90%;
-	height: auto;
-	border: 6px solid #fff;
-	box-sizing: border-box;
-	object-fit: cover;
+	max-width: 90%;
+  	max-height: 70vh; 
+  	width: auto; 
+  	height: auto;
+  	border: 6px solid #fff;
+  	object-fit: contain; 
 }
 
 .cerrar {
