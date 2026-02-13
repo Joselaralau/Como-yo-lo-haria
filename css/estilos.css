@@ -446,12 +446,15 @@ h4 {
 }
 
 .modal:target{ /* Mostrar modal al hacer clic en el enlace */
-  display: block;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.9); 
   z-index: 2000;
-  padding-top: 40px;
+  padding: 20px; 
+  overflow-y: auto; 
 }
 
 
@@ -506,7 +509,7 @@ h4 {
 }
 
 
-/*  Footer */
+/*  targter */
 
 .main-footer { /* Estilos del footer */
 	background: #000;
