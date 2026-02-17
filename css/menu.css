@@ -47,10 +47,11 @@
 
 /* Animación de hamburguesa */ 
 #checkbox {
-  display: block;
+  display: none;
 }
 
 .toggle {
+  display: block;
   position: relative;
   width: 30px;
   height: 30px;
