@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const btnMenu = document.getElementById("btnmenu");
+    const btnMenu = document.getElementById("checkbox");
     const menu = document.getElementById("menu");
 
     const submenuBtn = document.querySelector(".has-submenu > a");
