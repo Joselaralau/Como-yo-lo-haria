@@ -47,7 +47,7 @@
 
 /* Animación de hamburguesa */ 
 #checkbox {
-  display: none;
+  display: block;
 }
 
 .toggle {
