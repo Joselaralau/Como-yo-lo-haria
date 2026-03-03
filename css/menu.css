@@ -282,7 +282,17 @@
         background: #b46cff;
     }
 
+    #checkbox, 
+    .toggle {
+        display: none !important;
+    }
 
+    /* Asegúrate de que el menú se muestre horizontalmente */
+    .menu {
+        display: flex !important;
+        height: auto !important;
+        /* ... resto de tus estilos ... */
+    }
 
 }
 
